@@ -1,0 +1,55 @@
+{
+  "name": "gtm-deck-factory",
+  "version": "1.0.0",
+  "description": "AI-assisted presentation generation platform with Canva MCP integration",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch --clear-screen src/index.ts",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "test:ui": "vitest --ui",
+    "security:audit": "npm audit",
+    "docker:build": "docker build -t gtm-deck-factory:latest .",
+    "docker:run": "docker run -p 3000:3000 --env-file .env gtm-deck-factory:latest"
+  },
+  "keywords": [
+    "presentations",
+    "canva",
+    "ai",
+    "mcp",
+    "gtm",
+    "presales"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.1.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "zod": "^3.22.4",
+    "winston": "^3.11.0",
+    "mermaid": "^10.6.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.20",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
+    "eslint": "^8.54.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.0.4",
+    "@vitest/ui": "^1.0.4",
+    "@vitest/coverage-v8": "^1.0.4",
+    "ts-node": "^10.9.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

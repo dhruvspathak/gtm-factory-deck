@@ -1,0 +1,44 @@
+{
+  "checkmarx": {
+    "vendorName": "Checkmarx",
+    "companyName": "Checkmarx Ltd.",
+    "primaryColor": "#0066CC",
+    "secondaryColor": "#00A3E0",
+    "accentColor": "#FF6B35",
+    "logoAssetId": "checkmarx-logo-official",
+    "logoUrl": "https://www.checkmarx.com/media/images/logo.png",
+    "slideTemplate": "checkmarx-corporate",
+    "logoPosition": "bottom-left",
+    "fontFamily": "Inter, sans-serif",
+    "backgroundStyle": "gradient",
+    "backgroundColor": "#F5F7FA"
+  },
+  "forescout": {
+    "vendorName": "Forescout",
+    "companyName": "Forescout Technologies",
+    "primaryColor": "#003366",
+    "secondaryColor": "#0066CC",
+    "accentColor": "#FF9900",
+    "logoAssetId": "forescout-logo-official",
+    "logoUrl": "https://www.forescout.com/media/logo.png",
+    "slideTemplate": "forescout-corporate",
+    "logoPosition": "bottom-right",
+    "fontFamily": "Roboto, sans-serif",
+    "backgroundStyle": "solid",
+    "backgroundColor": "#FFFFFF"
+  },
+  "opentext": {
+    "vendorName": "OpenText",
+    "companyName": "OpenText Corporation",
+    "primaryColor": "#003E73",
+    "secondaryColor": "#00B0FF",
+    "accentColor": "#FF6B35",
+    "logoAssetId": "opentext-logo-official",
+    "logoUrl": "https://www.opentext.com/media/logo.png",
+    "slideTemplate": "opentext-corporate",
+    "logoPosition": "top-right",
+    "fontFamily": "OpenSans, sans-serif",
+    "backgroundStyle": "pattern",
+    "backgroundColor": "#FAFAFA"
+  }
+}
