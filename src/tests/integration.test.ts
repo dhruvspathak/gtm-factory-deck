@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach, afterEach } from "vitest";
+import { describe, it, expect, beforeEach } from "vitest";
 import DeckOrchestrator from "../../src/orchestrator/deckOrchestrator.js";
 
 describe("DeckOrchestrator Integration Tests", () => {

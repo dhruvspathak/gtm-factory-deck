@@ -45,8 +45,7 @@ export class StoryEngine {
       prompt.toLowerCase().includes("architecture") ||
       prompt.toLowerCase().includes("technical");
     const isCompetitive =
-      prompt.toLowerCase().includes("
-") ||
+      prompt.toLowerCase().includes("competitor") ||
       prompt.toLowerCase().includes("vs");
 
     if (isCompetitive) {
@@ -164,7 +163,7 @@ export class StoryEngine {
    */
   private generateSlideContent(
     slideType: string,
-    prompt: string,
+    _prompt: string,
     vendorName: string
   ): any {
     const templates: Record<string, any> = {

@@ -36,7 +36,7 @@ export class DiagramEngine {
     ) {
       return this.generateFlowDiagram(description, vendor);
     } else if (lowerDesc.includes("architecture")) {
-      return this.generateArchitectureDiagram(description, vendor);
+      return this.generateArchitectureDiagramMermaid(description, vendor);
     } else if (
       lowerDesc.includes("integration") ||
       lowerDesc.includes("ecosystem")
@@ -50,7 +50,7 @@ export class DiagramEngine {
   /**
    * Generate flow diagram
    */
-  private generateFlowDiagram(description: string, vendor: string): string {
+  private generateFlowDiagram(_description: string, vendor: string): string {
     return `graph LR
     A["Developer"] -->|Push Code| B["Version Control<br/>GitHub/GitLab"]
     B -->|Trigger| C["${vendor} SAST/SCA"]
@@ -71,9 +71,9 @@ export class DiagramEngine {
   /**
    * Generate architecture diagram
    */
-  private generateArchitectureDiagram(
-    description: string,
-    vendor: string
+  private generateArchitectureDiagramMermaid(
+    _description: string,
+    _vendor: string
   ): string {
     return `graph TB
     subgraph "Presentation Layer"
@@ -125,7 +125,7 @@ export class DiagramEngine {
    * Generate integration diagram
    */
   private generateIntegrationDiagram(
-    description: string,
+    _description: string,
     vendor: string
   ): string {
     return `graph LR
@@ -153,7 +153,7 @@ export class DiagramEngine {
   /**
    * Generate generic diagram
    */
-  private generateGenericDiagram(description: string, vendor: string): string {
+  private generateGenericDiagram(_description: string, vendor: string): string {
     return `graph TB
     A["Input"] --> B["Processing<br/>${vendor}"]
     B --> C["Analysis"]
@@ -185,7 +185,7 @@ export class DiagramEngine {
   /**
    * Generate deployment diagram
    */
-  generateDeploymentDiagram(environment: string): string {
+  generateDeploymentDiagram(_environment: string): string {
     return `graph TB
     subgraph "Cloud Provider"
       subgraph "Kubernetes Cluster"

@@ -1,6 +1,5 @@
 import { logger } from "../utils/logger.js";
 import {
-  PresentationRequest,
   validatePresentationRequest,
   CanvaDesign,
 } from "../security/validation.js";
@@ -103,7 +102,7 @@ export class DeckOrchestrator {
       const diagramStart = Date.now();
       for (const slide of slides) {
         if (slide.layout === "diagram") {
-          const diagramMermaid = this.diagramEngine.generateArchitectureDiagram(
+          const diagramMermaid = await this.diagramEngine.generateArchitectureDiagram(
             slide.content,
             brandProfile.vendorName
           );

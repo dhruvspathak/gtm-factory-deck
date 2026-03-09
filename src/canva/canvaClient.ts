@@ -2,7 +2,8 @@ import axios, { AxiosInstance } from "axios";
 import { logger } from "../utils/logger.js";
 import { CanvaDesign } from "../security/validation.js";
 
-interface CanvaSlide {
+// Note: CanvaSlide interface used for type definitions
+export interface CanvaSlide {
   pageId: string;
   title: string;
   elements: CanvaElement[];

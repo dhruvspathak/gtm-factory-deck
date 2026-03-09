@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { logger } from "./logger.js";
+import { logger } from "../utils/logger.js";
 
 // Validation schemas
 export const PresentationRequestSchema = z.object({
