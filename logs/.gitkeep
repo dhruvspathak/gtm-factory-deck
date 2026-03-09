@@ -1,0 +1,8 @@
+# Logs directory
+
+This directory contains application logs in production/development.
+
+- `error.log` - Error messages
+- `combined.log` - All log messages
+
+Keep this directory in git for production deployments.
